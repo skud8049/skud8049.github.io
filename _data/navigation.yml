@@ -15,7 +15,12 @@
   # main links
 
 main:
-  - title: "블로그 방문하기"
+  - title: "HOME"
     url: https://skud8049.github.io/
   - title: "About"
     url: /about/
+  - title: "CATEGORIES"
+    url: /categories/
+  - title: "TAGS"
+    url: /tags/ 
+  
