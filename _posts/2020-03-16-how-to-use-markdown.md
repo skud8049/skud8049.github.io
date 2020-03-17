@@ -106,7 +106,8 @@ tags:
 
 - " ``` " 을 문단 앞뒤로 입력
 
-```C++
+
+```C
   #include <iostream>
   using namespace std;
 
@@ -116,6 +117,7 @@ tags:
     return 0;
   }
 ```
+
 
 - " ```C " 와 같이 언어를 입력하면 언어에 맞추어 하이라이트 표시
 
