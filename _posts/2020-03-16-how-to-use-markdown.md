@@ -121,7 +121,7 @@ tags:
 - " ``` " 을 문단 앞뒤로 입력
 
 
-```C
+```c++
   #include <iostream>
   using namespace std;
 
