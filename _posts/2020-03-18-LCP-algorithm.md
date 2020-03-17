@@ -17,7 +17,7 @@ last_modified_at: 2020-03-18T03:53:00
 
 # 문제출처
 
-[SWEA 1257. K번째 문자열](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV18KWf6ItECFAZN&categoryId=AV18KWf6ItECFAZN&categoryType=CODE "바로가기"){: target="_blank"}
+[{{page.title}}](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV18KWf6ItECFAZN&categoryId=AV18KWf6ItECFAZN&categoryType=CODE "바로가기"){: target="_blank"}
 
 
 
