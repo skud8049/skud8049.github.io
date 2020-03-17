@@ -17,7 +17,7 @@ last_modified_at: 2020-03-18T03:53:00
 
 # 문제출처
 
-[{{post.title}}](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV18KWf6ItECFAZN&categoryId=AV18KWf6ItECFAZN&categoryType=CODE "바로가기"){: target="_blank"}
+[SWEA 1257. K번째 문자열](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV18KWf6ItECFAZN&categoryId=AV18KWf6ItECFAZN&categoryType=CODE "바로가기"){: target="_blank"}
 
 
 
@@ -35,7 +35,6 @@ last_modified_at: 2020-03-18T03:53:00
 |2개|fo, ~~fo~~, fd|
 |3개|foo, fod, ~~fod~~|
 |4개|food|
-
 
 이와같은 방법은 정답을 찾을 수 있지만 퍼포먼스가 낮게 나온다. 따라서, 접미사(Suffix)를 이용한 방법을 통해 구하였다.
 
