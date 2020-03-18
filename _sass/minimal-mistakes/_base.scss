@@ -172,9 +172,9 @@ td > code {
   border-radius: $border-radius;
   
   //// 내가 변경한 부분
-  border: 1px dashed #c3c3c3;
-  background-color: rgb(125,107,85);
-  color: rgb(243,243,243);
+  border: 1px solid rgb(230,230,230);
+  background-color: rgb(242,242,242);
+  color: rgb(78,78,78);
   ////
 
   &:before,
