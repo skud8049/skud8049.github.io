@@ -16,17 +16,15 @@ last_modified_at: 2020-03-18T03:53:00
 아직 이해가 부족한 관계로 원리보다는 풀이방법을 기준으로 작성하였습니다.
 
 # 문제출처
-
+---
 [{{page.title}}](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV18KWf6ItECFAZN&categoryId=AV18KWf6ItECFAZN&categoryType=CODE "바로가기"){: target="_blank"}
 
 
 
 
 # 문제풀이
-
-부분 문자열들을 순서대로 나타내었을 때, K번째 문자열이 무엇인지 구하는 문제.
-
-간단하게 생각하면 선택 개수에 따라 생성되는 부분 문자열을 나열 후 사전순에 맞게 정렬 후 K번째 문자를 구하는 간단한 문제.
+---
+부분 문자열들을 순서대로 나타내었을 때, K번째 문자열이 무엇인지 구하는 문제. 간단하게 생각하면 선택 개수에 따라 생성되는 부분 문자열을 나열 후 사전순에 맞게 정렬 후 K번째 문자를 구하는 간단한 문제.
 
 ||food|
 |:-:|:-:|
@@ -94,7 +92,6 @@ last_modified_at: 2020-03-18T03:53:00
 # 코드
 
 ```c++
-
 #include <iostream>
 #include <string>
 #include <string.h>
