@@ -1,5 +1,5 @@
 ---
-title: "소개글"
+title: "ABOUT"
 permalink: /about/
 toc: true
 toc_sticky: true
@@ -9,7 +9,7 @@ comments : false
 ---
 
 ----
-# 소개
+# 자료를 정리하기 위한 블로그
 
 이 블로그는 개인적인 공부를 정리하기 위해서 만들었습니다.
 
