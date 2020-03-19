@@ -292,7 +292,5 @@ defaults:
       share: true
       related: false
 
-
-
 header:
-  image: /assets/images/banner.jpg
+  image: "/assets/images/banner.jpg"
