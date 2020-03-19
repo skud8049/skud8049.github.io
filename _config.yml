@@ -292,5 +292,3 @@ defaults:
       share: true
       related: false
 
-header:
-  image: "/assets/images/banner.jpg"
