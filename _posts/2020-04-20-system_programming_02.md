@@ -30,7 +30,7 @@ last_modified_at: 2020-04-20T20:17:00
 
 - 현재 열려있는 파일을 구분하는 정수값
 - 저수준 파일 입출력에서 열린 파일을 참조하는데 사용 됨
-- 0 : stdin, 1 : stdout, 2 : stderr 로 미리 할당되어 있다.
+- 0번 : stdin / 1번 : stdout / 2번 : stderr 은 미리 할당되어 있다.
     - 따라서, File을 가져오면 3번부터 할당된다.
     - 실패 시 -1 리턴
 
@@ -58,7 +58,7 @@ int close(int fd);
     oflag : 기능 설정
     mode : 권할 설정
 
-|oflag||
+|oflag의 종류||
 |:-|:-|
 |종류|기능|
 |O_RDONLY|읽기 전용으로 연다.|
@@ -71,7 +71,7 @@ int close(int fd);
 |O_NONBLOCK / O_NDELAY|비블로킹(Non-blocking) 입출력|
 |O_SYNC / O_DSYNC|저장장치에 쓰기가 끝나아 쓰기 동작을 완료|
 
-||mode||
+|mode의 종류 |||
 |:-|:-|:-|
 |플래그|모드|기능|
 |S_IRWXU|0700|소유자 읽기/쓰기/실행 권한|
@@ -87,7 +87,7 @@ int close(int fd);
 |S_IWOTH|0002|기타 사용자 쓰기 권한|
 |S_IXOTH|0001|기타 사용자 실행 권한|
 
-## 3-1 예제
+## 3-1 파일 입력 예제
 
 ```c
 #include <sys/types.h>
@@ -111,9 +111,24 @@ int main()
         perror("Creat error!");
         exit(1);
     }
+    else
+    {
+        printf("fd = %d\n", fd);
+    }
 
     close(fd);
 
     return 0;
 }
 ```
+    [출력]
+        fd = 3
+
+    [코드설명]
+    
+    - mode 플래그 = 소유자 읽기/쓰기, 그룹 읽기, 기타사용자 읽기 권한으로 설정
+    
+    - test.txt 파일을 열고 File descriptor 번호를 fd에 할당
+        - 만약 test.txt 파일이 없다면 O_CREAT에 의해 파일이 생성됨
+    
+    - 만약, 파일을 열지 못했다면 fd = -1 이므로 에러 메세지 표시
