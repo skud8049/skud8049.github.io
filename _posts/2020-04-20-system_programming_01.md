@@ -12,9 +12,9 @@ tags:
 last_modified_at: 2020-04-20T20:17:00
 ---
 
-전역변수 `errno`에 마지막 오류 코드가 저장된다.
-
 # 1. 시스템 호출의 오류 처리
+
+전역변수 `errno`에 마지막 오류 코드가 저장된다.
 
 시스템 호출 함수 `access`는 성공 시 0, 실패 시 -1을 리턴한다.
 
@@ -23,6 +23,7 @@ last_modified_at: 2020-04-20T20:17:00
 #include <unistd.h>
 #include <errno.h>
 
+// 전역변수 errno 사용
 extern int errno;
 
 int main(void)
@@ -46,6 +47,7 @@ int main(void)
 #include <stdlib.h>
 #include <stdio.h>
 #include <errno.h>
+
 extern int errno;
 
 int main(){
@@ -104,4 +106,4 @@ char *strerror(int errnum)
     ...
 ```
     [출력]
-    ERROR!: No such file or directory
+    No such file or directory
