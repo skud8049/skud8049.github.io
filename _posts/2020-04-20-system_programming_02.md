@@ -217,7 +217,7 @@ off_t lseek(int fd, off_t offset, int whence);
   - **SEEK_CUR** : 현재 포인터의 위치
   - **SEEK_END** : 파일의 맨 마지막
 
-<center><img src="ss"></center>
+<center><img src="https://github.com/skud8049/skud8049.github.io/blob/master/assets/images/file_offset.png?raw=true"></center>
 
 ## 5-1. 예제
 
