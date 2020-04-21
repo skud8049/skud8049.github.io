@@ -9,7 +9,7 @@ categories:
   - 자료구조
 tags:
   - heap
-last_modified_at: 2020-04-20T23:01:00
+last_modified_at: 2020-04-21T11:40:00
 ---
 
 # 1. 개념
@@ -18,5 +18,5 @@ last_modified_at: 2020-04-20T23:01:00
 - 여러개의 데이터 중 `최대`, `최소`를 빠르게 찾기 위한 구조
 - 최대힙과 최소힙 두가지 종류가 있다.
 
-![max_heap](assets/images/max_heap.png) ![min_heap](assets/images/min_heap.png)
+![max_heap](https://github.com/skud8049/skud8049.github.io/blob/master/assets/images/max_heap.png?raw=true) ![min_heap](https://github.com/skud8049/skud8049.github.io/blob/master/assets/images/min_heap.png?raw=true)
 
