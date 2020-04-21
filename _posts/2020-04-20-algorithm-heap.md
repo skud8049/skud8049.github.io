@@ -16,11 +16,14 @@ last_modified_at: 2020-04-21T11:40:00
 
 - 완전이진트리 구조 형태로 루트값이 최대 또는 최소 값이 되는 구조
 - 여러개의 데이터 중 `최대`, `최소`를 빠르게 찾을 수 있다.
-- 최대힙과 최소힙 두가지 종류가 있다.
+- 최대힙과 최소힙 두 가지 종류가 있다.
 
+|||
+|:-:|:-:|
+|||
 <table>
 	<tr>
-		<td><img src=https://github.com/skud8049/skud8049.github.io/blob/master/assets/images/max_heap.png?raw=true)></td>
+		<td><img src=https://github.com/skud8049/skud8049.github.io/blob/master/assets/images/max_heap.png?raw=true></td>
 		<td><img src=https://github.com/skud8049/skud8049.github.io/blob/master/assets/images/min_heap.png?raw=true></td>
 	</tr>
 	<tr>
@@ -33,3 +36,10 @@ last_modified_at: 2020-04-21T11:40:00
 	</tr>
 </table>
 
+# 2. 구현
+
+## 2.1 삽입
+
+## 2.2 삭제
+
+# 3. 코드
