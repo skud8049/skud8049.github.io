@@ -18,16 +18,18 @@ last_modified_at: 2020-04-21T11:40:00
 - 여러개의 데이터 중 `최대`, `최소`를 빠르게 찾을 수 있다.
 - 최대힙과 최소힙 두 가지 종류가 있다.
 
-<center><img src=https://github.com/skud8049/skud8049.github.io/blob/master/assets/images/max_heap.png?raw=true>
+<center><img src=https://github.com/skud8049/skud8049.github.io/blob/master/assets/images/max_heap.png?raw=true></center>
 
+<center>
 [최대힙]
 
 Root의 값이 최대가 된다.</center>
 
 <br><br><br>
 
-<center><img src=https://github.com/skud8049/skud8049.github.io/blob/master/assets/images/max_heap.png?raw=true>
+<center><img src=https://github.com/skud8049/skud8049.github.io/blob/master/assets/images/max_heap.png?raw=true></center>
 
+<center>
 [최대힙]
 
 Root의 값이 최대가 된다.</center>
