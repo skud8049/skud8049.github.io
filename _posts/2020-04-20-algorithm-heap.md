@@ -22,18 +22,19 @@ last_modified_at: 2020-04-21T11:40:00
 <br>
 [최대힙]
 <br>
-Root의 값이 최대가 된다.</center>
+Root의 값이 최대</center>
 
 <br><br><br>
 
 <center><img src="https://github.com/skud8049/skud8049.github.io/blob/master/assets/images/max_heap.png?raw=true">
 <br>
-[최대힙]
+[최소힙]
 <br>
-Root의 값이 최대가 된다.</center>
+Root의 값이 최소</center>
 
 # 2. 구현
 
+	
 ## 2.1 삽입
 
 ## 2.2 삭제
