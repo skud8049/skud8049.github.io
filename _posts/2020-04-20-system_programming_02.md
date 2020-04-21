@@ -58,9 +58,9 @@ int close(int fd);
     oflag : 기능 설정
     mode : 권할 설정
 
-|oflag의 종류||
+|<center>oflag의 종류</center>||
 |:-|:-|
-|종류|기능|
+|<center>종류|<center>기능|
 |O_RDONLY|읽기 전용으로 연다.|
 |O_WRONLY|쓰기 전용으로 연다.|
 |O_RDWR|읽기/쓰기 가능하게 연다.|
@@ -71,9 +71,9 @@ int close(int fd);
 |O_NONBLOCK / O_NDELAY|비블로킹(Non-blocking) 입출력|
 |O_SYNC / O_DSYNC|저장장치에 쓰기가 끝나아 쓰기 동작을 완료|
 
-|mode의 종류 |||
+|<center>mode의 종류|||
 |:-|:-|:-|
-|플래그|모드|기능|
+|<center>플래그|<center>모드|<center>기능|
 |S_IRWXU|0700|소유자 읽기/쓰기/실행 권한|
 |S_IRUSR|0400|소유자 읽기 권한|
 |S_IWUSR|0200|소유자 쓰기 권한|
@@ -132,3 +132,6 @@ int main()
         - 만약 test.txt 파일이 없다면 O_CREAT에 의해 파일이 생성됨
     
     - 만약, 파일을 열지 못했다면 fd = -1 이므로 에러 메세지 표시
+
+
+# 작성중.......
