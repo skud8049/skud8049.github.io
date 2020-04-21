@@ -1,5 +1,5 @@
 ---
-title: "[시스템 프로그래밍] 저수준 파일 입출력-1"
+title: "[시스템 프로그래밍] 저수준 파일 입출력"
 excerpt: "저수준 파일 입출력"
 
 toc: true
@@ -15,13 +15,15 @@ last_modified_at: 2020-04-20T20:17:00
 # 1. 저수준 파일 처리
 
 - 유닉스 계열은 C언어 표준 라이브러리에서 저수준, 고수준 파일을 지원한다.
-- 파일 디스크립터 번호를 사용해 입, 출력
+- 파일 디스크립터(file descriptor) 번호를 사용해 입, 출력
 - Socket, Device handling에는 저수준 파일 IO 사용한다.
 
-|저수준|고수준|
+|저수준 파일 입출력|고수준 파일 입출력|
 |:-:|:-:|
-|비직관적|직관적|
-|빠름|비교적느림|
+|비직관적|직관적(사용이 쉽다)|
+|고수준 보다 빠름|저수준 보다 느림|
+|바이트 단위로 읽고 쓴다|버퍼 단위로 읽고 쓴다|
+|특수 파일에 대한 접근 가능|여러 가지 형식을 지원|
 |open, close, read, write 등 | fopen, fclose, fread, fwrite 등|
 
 # 2. File descriptor
@@ -34,7 +36,7 @@ last_modified_at: 2020-04-20T20:17:00
 
 
 
-# 3. 파일 열기, 생성, 닫기 (open, close)
+# 3. 파일 열기, 닫기 (open, close)
 
 ```c
 #include <sys/types.h>
@@ -52,11 +54,11 @@ int creat(const char *pathname, int oflag, mode_t mode);
 // 닫기
 int close(int fd);
 ```
-    path : 파일 지정
+    pathname : 파일 지정
     oflag : 기능 설정
     mode : 권한 설정 (O_CREAT 생성 시)
 
-|<center>**oflag의 종류**</center>||
+|<center>oflag의 종류</center>||
 |:-|:-|
 |<center>종류|<center>기능|
 |O_RDONLY|읽기 전용으로 연다.|
@@ -69,7 +71,7 @@ int close(int fd);
 |O_NONBLOCK / O_NDELAY|비블로킹(Non-blocking) 입출력|
 |O_SYNC / O_DSYNC|저장장치에 쓰기가 끝나아 쓰기 동작을 완료|
 
-|<center>**mode의 종류**|||
+|<center>mode의 종류|||
 |:-|:-|:-|
 |<center>플래그|<center>모드|<center>기능|
 |S_IRWXU|0700|소유자 읽기/쓰기/실행 권한|
@@ -85,7 +87,7 @@ int close(int fd);
 |S_IWOTH|0002|기타 사용자 쓰기 권한|
 |S_IXOTH|0001|기타 사용자 실행 권한|
 
-## 3-1. 예제
+## 3-1. 파일 열기/ 생성/ 닫기 예제
 
 ```c
 #include <sys/types.h>
@@ -129,7 +131,7 @@ int main()
         fd = 3
     "test.txt" 파일 생성
 
-# 4. 파일 읽기 / 쓰기 (read, write)
+# 4. 파일 읽기/ 쓰기 (read, write)
 
 ```c
 //읽기
@@ -149,7 +151,7 @@ ssize_t write(int fd, const void *buf, size_t count);
 - 바이트 단위로 쓴다
 - 쓰기를 수행한 바이트 수를 리턴
 
-## 4-1. 예제
+## 4-1. 파일 읽기 / 쓰기 예제
 
 ```c
 #include <sys/types.h>
@@ -219,7 +221,7 @@ off_t lseek(int fd, off_t offset, int whence);
 
 <center><img src="https://github.com/skud8049/skud8049.github.io/blob/master/assets/images/file_offset.png?raw=true"></center>
 
-## 5-1. 예제
+## 5-1. 파일 오프셋 예제
 
 ```c
 off_t newpos;
@@ -287,3 +289,9 @@ int main(void)
 Offset start=0, Read str=Lee's life, n=11
 Offest cur=11
 ```
+
+# 6. 파일 복제 (dup)
+
+# 7. 파일 기술자 제어 (fcntl)
+
+# 8. 파일 삭제 (unlink)
