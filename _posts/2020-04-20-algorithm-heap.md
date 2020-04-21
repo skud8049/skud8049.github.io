@@ -18,14 +18,13 @@ last_modified_at: 2020-04-21T11:40:00
 - 여러개의 데이터 중 `최대`, `최소`를 빠르게 찾을 수 있다.
 - 최대힙과 최소힙 두 가지 종류가 있다.
 
-<center>![](https://github.com/skud8049/skud8049.github.io/blob/master/assets/images/max_heap.png?raw=true)</center>
+<center><img src=https://github.com/skud8049/skud8049.github.io/blob/master/assets/images/max_heap.png?raw=true></center>
 <center>[최대힙]
-
-||![](https://github.com/skud8049/skud8049.github.io/blob/master/assets/images/min_heap.png?raw=true)|
-|:-:|:-:|
-|[최대 힙]|[최소 힙]|
-|Root의 값이 최대|Root의 값이 최소|
-
+<center>Root의 값이 최대가 된다.
+<br><br><br>
+<center><img src=https://github.com/skud8049/skud8049.github.io/blob/master/assets/images/max_heap.png?raw=true></center>
+<center>[최대힙]
+<center>Root의 값이 최대가 된다.
 
 # 2. 구현
 
